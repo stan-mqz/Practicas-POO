@@ -7,7 +7,7 @@ abstract class Sensor{
     abstract procesarLectura():void
 
     public actualizarValor(nuevoValor: number):void {
-        this.valorActual = nuevoValor;
+    this.valorActual = nuevoValor;  
         console.log(`Sensor: ${this.id} actualizó su valor a: ${this.valorActual} `)
         this.procesarLectura()
     }
